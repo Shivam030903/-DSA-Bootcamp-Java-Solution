@@ -1,0 +1,9 @@
+.idea/
+out/
+*.iml
+*Main.java
+*.class
+*.xml
+Lecture code/
+success images/
+Leetcode/
