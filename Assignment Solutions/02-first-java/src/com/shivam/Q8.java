@@ -11,8 +11,6 @@ public class Q8 {
         for (int i = length; i >= 0; i--) {
             reverse=reverse+original.charAt(i);
 
-
-
         }
         if (original.equals(reverse)){
             System.out.println("Input is Palindrome");

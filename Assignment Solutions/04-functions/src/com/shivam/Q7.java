@@ -10,23 +10,23 @@ public class Q7 {
      */
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-//        int num=in.nextInt();
-        System.out.println(isprime(2));
+        System.out.println("Enter number you want to check prime or not");
+        int num=in.nextInt();
+        System.out.println(isprime(num));
 
     }
 
     private static boolean isprime(int num) {
+        if (num<=1){
+            return false;
+        }
         int count=2;
-        while (count<num){
+        while (count*count<=num){
             if (num%count==0){
 //                return false;
-
-            }else {
-                return true;
             }
             count++;
         }
-
-        return false;
+        return count*count > num;
     }
 }

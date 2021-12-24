@@ -1,8 +1,13 @@
 package com.shivam;
 
+import java.util.Scanner;
+
 public class Q10 {
     public static void main(String[] args) {
-        palidrome(221);
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter number you watn to check palindrome or not");
+        int num=input.nextInt();
+        palidrome(num);
     }
 
     private static void palidrome(int num) {
